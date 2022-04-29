@@ -4,9 +4,9 @@ var fs = require('fs')
 
 const url = Cypress.config('baseUrl') || "http://localhost:2368/ghost/#/site"
 const appName = Cypress.env('appName')|| "your app"
-const events = Cypress.env('events')|| 100
+const events = Cypress.env('events')|| 300
 const delay = Cypress.env('delay') || 100
-var seed = Cypress.env('seed')
+var seed = Cypress.env('seed') || 1234
 
 const pct_clicks = Cypress.env('pctClicks') || 19
 const pct_scrolls = Cypress.env('pctScroll') || 17
@@ -15,7 +15,7 @@ const pct_keys = Cypress.env('pctKeys') || 16
 const pct_spkeys = Cypress.env('pctSpKeys') || 16
 const pct_pgnav = Cypress.env('pctPgNav') || 16 
 
-const LOG_FILENAME = "../../../results/monkey-execution.html"
+const LOG_FILENAME = "../../../results/monkey-login-execution.html"
 
 /*
  Bob Jenkins Small Fast, aka smallprng pseudo random number generator is the chosen selection for introducing seeding in the tester

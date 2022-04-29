@@ -1,10 +1,10 @@
 {
-    "projectId":"TSDL-Monkey-with-cypress",
+    "projectId":"Ghost pruebas automatizas",
     "baseUrl":"http://localhost:2368/ghost/#/site",
     "env":{
         "appName":"Pruebas Ghost",
-        "events":100,
-        "delay":300,
+        "events":300,
+        "delay":100,
         "seed":1234,
         "pctClicks":19,
         "pctScroll":17,
